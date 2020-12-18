@@ -1,0 +1,62 @@
+1st Step in Developing React Application
+
+    Download and Install Node.js on your local computer
+    Create a new React Application 
+
+    Implement these commands your Code Editor in this exact order 
+    Open your code editor terminal
+    
+    Add the below script to create react, react-dom, and react-scripts....
+    
+    npx create-react-app your-folder-name
+
+// This will make the newly created folder the active React Directory
+
+cd your-folder-name
+
+// This will run the React Application in your browser
+// Start the development server
+
+npm start
+
+Ref:	https://reactjs.org/docs/create-a-new-react-app.html
+https://www.w3schools.com/react/react_getstarted.asp 
+
+2nd Step – Stripping down and Cleaning up your project folders/files
+
+Remove all the unwanted folders and files from the project
+Restructure and Test your project
+
+// Keep only the below list content
+1.	Src Folder
+
+  // In this folder, you should keep only this file
+  a.	Index.js 
+  
+  Remove these references
+  -	import './index.css';
+  -	import App from './App';
+  -	import * as serviceWorker from './serviceWorker';
+  -	serviceWorker.unregister();
+
+2.	Public Folder
+    a.	Index.html
+
+    Remove the unnecessary references keep only important ones
+    -	Important Meta Tags
+    -	Title
+    -	The main <div> tag
+
+3.	Remove the README.md file
+
+4.	Remember: You can add any additional file to your project
+
+5.	Test whether your project is WORKING
+    a.	Make sure to delete the following code from the index.js file and add you own
+      <React.StrictMode>
+        <App />
+      </React.StrictMode>
+    
+    b. Refresh the page and see whether it is work effectively
+    
+
