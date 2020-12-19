@@ -2,23 +2,24 @@
 1st Step in Developing React Application
 
     Download and Install Node.js on your local computer
-    Create a new React Application 
+    
+Create a new React Application 
 
     Implement these commands in your Code Editor in this exact order 
-    Open your code editor terminal
+    Open your code editor and access the terminal
     
-    Add the below script to create react, react-dom, and react-scripts....
+// In the terminal, execute the following codes
     
     npx create-react-app your-folder-name
 
-// This will make the newly created folder the active React Directory
+// This code will the below folder with the React Codes the active directory
 
-cd your-folder-name
+    cd your-folder-name
 
-// This will run the React Application in your browser
+// This below code will run the React Application in your browser
 // Start the development server
 
-npm start
+    npm start
 
 Ref:	https://reactjs.org/docs/create-a-new-react-app.html
 https://www.w3schools.com/react/react_getstarted.asp 
@@ -29,9 +30,9 @@ Remove all the unwanted folders and files from the project
 Restructure and Test your project
 
 // Keep only the below list content
-1.	Src Folder
+1.	Src Folder (Keep)
 
-  // In this folder, you should keep only this file
+  // In this folder, you should only keep this file
   a.	Index.js 
   
   Remove these references
@@ -40,7 +41,7 @@ Restructure and Test your project
   -	import * as serviceWorker from './serviceWorker';
   -	serviceWorker.unregister();
 
-2.	Public Folder
+2.	Public Folder (Keep)
     a.	Index.html
 
     Remove the unnecessary references keep only important ones
@@ -50,7 +51,7 @@ Restructure and Test your project
 
 3.	Remove the README.md file
 
-4.	Remember: You can add any additional file to your project
+4.	Remember: You can add any additional file to your project within the appropriate folder
 
 5.	Test whether your project is WORKING
     a.	Make sure to delete the following code from the index.js file and add you own
