@@ -28,3 +28,5 @@ The purpose of the function is to display the specified HTML (JSX) code from oth
     );
 
     ReactDOM.render(myelement, document.getElementById('root'));
+    
+    
