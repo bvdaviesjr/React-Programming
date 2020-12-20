@@ -10,11 +10,11 @@ Create a new React Application
     
 // In the terminal, execute the following codes
     
-    npx create-react-app your-folder-name
+    npx create-react-app testing (<= your-folder-name)
 
 // This code will the below folder with the React Codes the active directory
 
-    cd your-folder-name
+    cd testing (<= your-folder-name)
 
 // This below code will run the React Application in your browser
 // Start the development server
