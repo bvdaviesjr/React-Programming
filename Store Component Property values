@@ -1,0 +1,71 @@
+
+React components has a built-in state object.
+
+The state object is where you store property values that belongs to the component.
+
+// Creating the state Object
+    
+    class Car extends React.Component {
+    constructor(props) {
+      super(props);
+      this.state = {brand: "Ford"};
+    }
+    render() {
+      return (
+        <div>
+          <h1>My Car</h1>
+        </div>
+      );
+    }
+  }
+  
+// The state object can contain as many properties as you like:
+    class Car extends React.Component {
+    constructor(props) {
+      super(props);
+      this.state = {
+        brand: "Ford",
+        model: "Mustang",
+        color: "red",
+        year: 1964
+      };
+    }
+    render() {
+      return (
+        <div>
+          <h1>My Car</h1>
+        </div>
+      );
+    }
+  }
+  
+  
+// Using the state Object by using the this.state.propertyname syntax:
+    class Car extends React.Component {
+      constructor(props) {
+        super(props);
+        this.state = {
+          brand: "Ford",
+          model: "Mustang",
+          color: "red",
+          year: 1964
+        };
+      }
+      render() {
+        return (
+          <div>
+            <h1>My {this.state.brand}</h1>
+            <p>
+              It is a {this.state.color}
+              {this.state.model}
+              from {this.state.year}.
+            </p>
+          </div>
+        );
+      }
+    }
+
+    ReactDOM.render(<Car />, document.getElementById('root'));
+
+
+
