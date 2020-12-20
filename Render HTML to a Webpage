@@ -12,7 +12,7 @@ The purpose of the function is to display the specified HTML (JSX) code from oth
     // This is how you render it to be displayed in the browser
     ReactDOM.render(myfirstelement, document.getElementById('root'));
 
-    // This is how you create a variable that contains more than one line of HTML codes
+    // This is how you create and renders a variable that contains more than one line of HTML codes
     const myelement = (
       <table>
         <tr>
