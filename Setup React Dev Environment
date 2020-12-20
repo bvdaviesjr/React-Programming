@@ -44,21 +44,34 @@ Restructure and Test your project
 2.	Public Folder (Keep this folder)
     a.	Index.html
 
-    // Remove the unnecessary references keep only important ones
-    -	Important Meta Tags
-    -	Title
-    -	The main <div> tag
+        // Remove the unnecessary references keep only important ones
+        -	Important Meta Tags
+        -	Title
+        -	The main <div> tag
+        
+    b. Excluding the index.html file, remove all the other files from the folder
 
-3.	Remove the README.md file
+3. node_modules (Keep this folder) 
 
-4.	Remember: You can add any additional file to your project within the appropriate folder
+4.	Remove the README.md file
 
-5.	Test whether your project is WORKING
+5.	Remember: You can add any additional file to your project within the appropriate folder
+
+6.	Test whether your project is WORKING
     a.	Make sure to delete the following code from the index.js file and add you own
       <React.StrictMode>
         <App />
       </React.StrictMode>
     
-    b. Refresh the page and see whether it is work effectively
+    b. Make sure your index.js file looks like the code below:
+    
+            import React from 'react';
+            import ReactDOM from 'react-dom';
+
+            const myfirstelement = <h1>Hello React!</h1>
+            ReactDOM.render(myfirstelement, document.getElementById('root'));
+    
+    c. Refresh the page and see whether it is work effectively or run the below code in the terminal
+        - npm start
     
 
