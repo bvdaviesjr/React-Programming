@@ -1,0 +1,44 @@
+
+Props are arguments passed into React components. React Props are like function arguments in JavaScript and attributes in HTML.
+
+// Creating Props within a Component
+    class Car extends React.Component {
+      render() {
+        return <h2>I am a {this.props.brand}!</h2>
+      }
+    }
+
+    const myelement = <Car brand="Ford" />;
+
+    ReactDOM.render(myelement, document.getElementById('root'));
+  
+// Pass Data to a Class Component
+    class Car extends React.Component {
+      render() {
+        return <h2>I am a {this.props.brand}!</h2>;
+      }
+    }
+
+    class Garage extends React.Component {
+      render() {
+        return (
+          <div>
+          <h1>Who lives in my Garage?</h1>
+          <Car brand="Ford" />
+          </div>
+        );
+      }
+    }
+
+    ReactDOM.render(<Garage />, document.getElementById('root'));
+    
+// Pass Data within a Function Component
+    function SomeComponent (props) {
+      console.log(props.hardcodedProps); // “some text”
+      console.log(props.expressionProp); // “expression 1”
+      return <div>Some Component</div>
+    }
+
+   
+   
+ 
