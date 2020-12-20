@@ -21,6 +21,28 @@ JSX allows us to write HTML elements in JavaScript and place them in the DOM wit
       </ul>
     );
 
-    ReactDOM.render(myelement, document.getElementById('root'));
-    
+    ReactDOM.render(myelement, document.getElementById('root'));  
+
+// Embedding Expression and Function in React App
+        function formatName(user) {
+          return user.firstName + ' ' + user.lastName;
+        }
+
+        const user = {
+          firstName: 'Harper',
+          lastName: 'Perez'
+        };
+
+        const element = (
+          <h1>
+            Hello, {formatName(user)}!
+          </h1>
+        );
+
+        ReactDOM.render(
+          element,
+          document.getElementById('root')
+        );
+
+
     
