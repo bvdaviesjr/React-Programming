@@ -1,0 +1,67 @@
+
+Components are independent and reusable bits of code. They serve the same purpose as JavaScript functions, but work in isolation and returns HTML via a render function.
+
+Components come in two types, Class components and Function components.
+
+//  Rules in creating a Component in React
+
+    When creating a React component, the component's name must start with an upper case letter.
+
+    The component has to include the extends React.Component statement, this statement creates an inheritance to React.Component, and gives your component access 
+    to React.Component's functions.
+
+    The component also requires a render() method, this method returns HTML.
+    
+//  Function Component Implementation
+    function Car() {
+      return <h2>Hi, I am also a Car!</h2>;
+    }
+
+    ReactDOM.render(<Car />, document.getElementById('root'));
+    
+ // Class Component Implementation
+      class Car extends React.Component {
+      constructor() {
+        super();
+        this.state = {color: "red"};
+      }
+      render() {
+        return <h2>I am a Car!</h2>;
+      }
+    }
+
+// Class Component Implementation
+    class Car extends React.Component {
+      constructor() {
+        super();
+        this.state = {color: "red"};
+      }
+      render() {
+        return <h2>I am a {this.state.color} Car!</h2>;
+      }
+    }
+
+// Implementing multiple Components within each other
+    
+    class Car extends React.Component {
+    render() {
+      return <h2>I am a Car!</h2>;
+    }
+  }
+
+  class Garage extends React.Component {
+    render() {
+      return (
+        <div>
+        <h1>Who lives in my Garage?</h1>
+        <Car />
+        </div>
+      );
+    }
+  }
+
+  ReactDOM.render(<Garage />, document.getElementById('root'));
+  
+  
+
+
