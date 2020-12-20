@@ -2,3 +2,12 @@ React renders HTML to the web page by using a function called ReactDOM.render().
 
 The purpose of the function is to display the specified HTML (JSX) code from other pages in the app inside the specified HTML div element from the index.html.
 
+    // The code in the index.js file should look similar to this
+    import React from 'react';
+    import ReactDOM from 'react-dom';
+    
+    // This is how you implement HTML (JSX) code in React
+    const myfirstelement = <h1>Hello React!</h1>
+    
+    // This is how you render it to be displayed in the browser
+    ReactDOM.render(myfirstelement, document.getElementById('root'));
