@@ -26,25 +26,25 @@ https://www.w3schools.com/react/react_getstarted.asp
 
 2nd Step – Stripping down and Cleaning up your project folders/files
 
-Remove all the unwanted folders and files from the project
+Remove all the unwanted files from the Src Folder
 Restructure and Test your project
 
-// Keep only the below list content
-1.	Src Folder (Keep)
+1.	Src Folder (keep this folder)
 
   // In this folder, you should only keep this file
-  a.	Index.js 
+  a. Index.js 
+  b. You can also create additional folders here. Such as: app folder => which will have all your React Components in a .jsx file
   
-  Remove these references
+  // Remove these references
   -	import './index.css';
   -	import App from './App';
   -	import * as serviceWorker from './serviceWorker';
   -	serviceWorker.unregister();
 
-2.	Public Folder (Keep)
+2.	Public Folder (Keep this folder)
     a.	Index.html
 
-    Remove the unnecessary references keep only important ones
+    // Remove the unnecessary references keep only important ones
     -	Important Meta Tags
     -	Title
     -	The main <div> tag
